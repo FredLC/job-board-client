@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Jobs from './components/Jobs';
+
+const mockJobs = [
+  {
+    title: 'Full Stack Developer',
+    company: 'OpenPlay',
+  },
+  {
+    title: 'Ruby on Rails Developer',
+    company: 'Reva Media',
+  },
+  {
+    title: 'Full Stack Developer',
+    company: 'Links Technology',
+  },
+];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Jobs jobs={mockJobs} />
     </div>
   );
 }
