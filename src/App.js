@@ -1,26 +1,27 @@
 import React from 'react';
 import './App.css';
+import Banner from './components/Banner';
 import Jobs from './components/Jobs';
 
-const mockJobs = [
-  {
-    title: 'Full Stack Developer',
-    company: 'OpenPlay',
-  },
-  {
-    title: 'Ruby on Rails Developer',
-    company: 'Reva Media',
-  },
-  {
-    title: 'Full Stack Developer',
-    company: 'Links Technology',
-  },
-];
+const JOB_API_URL = 'http://localhost:3001/jobs';
+
+async function fetchJobs(updateCallback) {
+  const res = await fetch(JOB_API_URL);
+  const json = await res.json();
+  updateCallback(json);
+}
 
 function App() {
+  const [jobList, updateJobs] = React.useState([]);
+
+  React.useEffect(() => {
+    fetchJobs(updateJobs);
+  }, []);
+
   return (
     <div className='App'>
-      <Jobs jobs={mockJobs} />
+      <Banner />
+      <Jobs jobs={jobList} />
     </div>
   );
 }

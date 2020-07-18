@@ -1308,6 +1308,13 @@
     react-is "^16.8.0"
     react-transition-group "^4.4.0"
 
+"@material-ui/icons@^4.9.1":
+  version "4.9.1"
+  resolved "https://registry.yarnpkg.com/@material-ui/icons/-/icons-4.9.1.tgz#fdeadf8cb3d89208945b33dbc50c7c616d0bd665"
+  integrity sha512-GBitL3oBWO0hzBhvA9KxqcowRUsA0qzwKkURyC8nppnC3fw54KPKZ+d4V1Eeg/UnDRSzDaI9nGCdel/eh9AQMg==
+  dependencies:
+    "@babel/runtime" "^7.4.4"
+
 "@material-ui/styles@^4.10.0":
   version "4.10.0"
   resolved "https://registry.yarnpkg.com/@material-ui/styles/-/styles-4.10.0.tgz#2406dc23aa358217aa8cc772e6237bd7f0544071"
@@ -8562,6 +8569,11 @@ process@^0.11.10:
   resolved "https://registry.yarnpkg.com/process/-/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
   integrity sha1-czIwDoQBYb2j5podHZGn1LwW8YI=
 
+programming-languages-logos@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/programming-languages-logos/-/programming-languages-logos-0.0.3.tgz#17e073244d7886a2dc86d20ee6b3332ba765c5f4"
+  integrity sha512-58WiFkwCoEEwC86WUnRVSBM1vuNqxK4izjwR7uia/uAMw3zdFoVBa+JER1xIuyJxQrxf1T6+eZvoCnsnwXRfRg==
+
 progress@^2.0.0:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
@@ -8802,6 +8814,13 @@ react-is@^16.12.0, react-is@^16.7.0, react-is@^16.8.0, react-is@^16.8.1, react-i
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
+
+react-pll@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/react-pll/-/react-pll-0.0.1.tgz#336dd4306f17aa001374cba221c941c00868f0d7"
+  integrity sha512-piSRqPtZ4bwEHKwUQ0YednfQHT+JDjMwRkxLuPPhGFM915BWUwqYj9Q0oiK9gpFeEh2yb674pz6THQryinpBOg==
+  dependencies:
+    programming-languages-logos "^0.0.3"
 
 react-scripts@3.4.1:
   version "3.4.1"
